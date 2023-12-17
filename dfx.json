@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "my_counter_backend": {
+      "main": "src/my_counter_backend/main.mo",
+      "type": "motoko"
+    },
+    "my_counter_frontend": {
+      "dependencies": [
+        "my_counter_backend"
+      ],
+      "source": [
+        "src/my_counter_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
